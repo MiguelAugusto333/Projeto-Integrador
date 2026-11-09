@@ -1,0 +1,50 @@
+body{
+    background-color: #212221;
+}
+.fiordes{
+    font-size: 5rem;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/Aurora Boreal sobre o Fiorde Nevado.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: start;
+
+}
+.comecarExplorar{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.comecarExplorar:hover{
+    transform: scale(1.1);
+}
+.topico01, .topico02, .topico03, .topico04, .topico05, .topico06, .topico07, .topico08{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.topico01:hover{
+    transform: scale(1.1);
+}
+.topico02:hover{
+    transform: scale(1.1);
+}
+.topico03:hover{
+    transform: scale(1.1);
+}
+.topico04:hover{
+    transform: scale(1.1);
+}
+.topico05:hover{
+    transform: scale(1.1);
+}
+.topico06:hover{
+    transform: scale(1.1);
+}
+.topico07:hover{
+    transform: scale(1.1);
+}
+.topico08:hover{
+    transform: scale(1.1);
+}
