@@ -1,0 +1,18 @@
+:root {
+    --bg: #061521;
+    --bg-deep: #03101a;
+    --panel: #0b2030;
+    --panel-light: #102a3d;
+    --border: rgba(65, 158, 205, .28);
+    --cyan: #08c7e8;
+    --cyan-dark: #078db7;
+    --text: #f4f8fc;
+    --muted: #a9bdcc;
+    --entrar: #030E18;
+}
+body{
+    background-color: #030E18;
+}
+.criarConta{
+    background-color: #08c7e8;
+}

@@ -1,0 +1,10 @@
+:root{
+    --entrar: #030E18;
+    --botao_criarConta: #13D8FD;
+}
+body{
+    background-color: var(--entrar);
+}
+.criarConta{
+    background-color: var(--botao_criarConta);
+}
