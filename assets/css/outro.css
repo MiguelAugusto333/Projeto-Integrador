@@ -1,0 +1,64 @@
+body{
+    background-color: #212221;
+}
+header{
+    background: rgba(10, 20, 30, 0.45);
+    backdrop-filter: blur(10px)
+}
+.fiordes{
+    font-size: 5rem;
+}
+.fiordes_02{
+    font-size: 7em;
+    color: #0BF3DB;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/01_aurora_boreal_no_fiorde.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: start;
+}
+.corDiferente{
+    color: #0BF3DB;
+}
+.comecarExplorar{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #0BF3DB;
+}
+.comecarExplorar:hover{
+    transform: scale(1.1);
+}
+.topico01, .topico02, .topico03, .topico04, .topico05, .topico06, .topico07, .topico08{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.topico01:hover{
+    transform: scale(1.1);
+}
+.topico02:hover{
+    transform: scale(1.1);
+}
+.topico03:hover{
+    transform: scale(1.1);
+}
+.topico04:hover{
+    transform: scale(1.1);
+}
+.topico05:hover{
+    transform: scale(1.1);
+}
+.topico06:hover{
+    transform: scale(1.1);
+}
+.topico07:hover{
+    transform: scale(1.1);
+}
+.topico08:hover{
+    transform: scale(1.1);
+}
+.explore{
+    border: 2px solid #0BF3DB;
+}
