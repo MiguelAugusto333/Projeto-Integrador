@@ -15,7 +15,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
     <div class="container">
         <a class="navbar-brand fw-bold fs-3" href="#inicio">
-        <i class="bi bi-compass text-info"></i> Norge
+        <i class="bi bi-compass text-info"></i>
+        <span>The Nor<span class="text-info">Way</span>
         </a>
 
         <button
@@ -32,21 +33,52 @@
             <li class="nav-item">
             <a class="nav-link" href="#inicio">Início</a>
             </li>
-
             <li class="nav-item">
             <a class="nav-link" href="#vikings">Vikings</a>
             </li>
-
             <li class="nav-item">
             <a class="nav-link" href="#futebol">Futebol</a>
             </li>
-
             <li class="nav-item">
             <a class="nav-link" href="#noruega">Noruega</a>
             </li>
-
             <li class="nav-item">
             <a class="nav-link" href="#historia">História</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Culinaria" class="nav-link">Culinária</a>
+            </li>
+            <li class="nav-item">
+                <a href="#geografia" class="nav-link">Geografia</a>
+            </li>
+            <li class="nav-item">
+                <a href="#cultura" class="nav-link">Cultura</a>
+            </li>
+            <li class="nav-item">
+                <a id="botaoEntrar"
+        href="./criarConta.html"
+        class="entrar btn shadow bg-white rounded-4 fw-bold ms-5">
+        Entrar
+    </a>
+    <!-- Aparece quando está logado -->
+    <div class="dropdown" id="areaUsuario" style="display: none;">
+        <button class="icone-usuario"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            aria-label="Abrir menu do usuário">
+            <i class="bi bi-person"></i>
+    </button>
+        <div class="dropdown-menu dropdown-menu-end p-3 menu-usuario">
+            <h6 id="nomeCliente">Olá!</h6>
+            <p id="emailCliente" class="text-muted small"></p>
+            <hr>
+            <button class="dropdown-item text-danger"
+                type="button"
+                onclick="sairDaConta()">
+                <i class="bi bi-box-arrow-right me-2"></i>
+                Sair da conta
+            </button>
             </li>
         </ul>
         </div>
@@ -95,133 +127,107 @@
             Navegadores, guerreiros e exploradores que marcaram a história.
             </p>
         </div>
-          <a href="#" class="btn btn-outline-info rounded-pill"> Saiba mais </a>
+        <a href="#" class="btn btn-outline-info rounded-pill"> Saiba mais </a>
         </div>
-
         <div class="row g-3">
-          <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4">
             <div class="card bg-dark text-light h-100">
-              <img
+            <img
                 src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=700&q=80"
                 class="card-img-top"
                 alt="Paisagem marítima"
-              />
-
-              <div class="card-body">
+            />
+            <div class="card-body">
                 <h5 class="card-title fw-bold">História</h5>
-
                 <p class="card-text text-secondary">
-                  Conheça a origem e as grandes navegações dos Vikings.
+                Conheça a origem e as grandes navegações dos Vikings.
                 </p>
-
-                <a href="#" class="btn btn-outline-info btn-sm"> Conhecer </a>
-              </div>
+                <a href="#" class="btn btn-outline-info btn-sm rounded-pill"> Conhecer </a>
             </div>
-          </div>
-
-          <div class="col-12 col-md-4">
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
             <div class="card bg-dark text-light h-100">
-              <img
+            <img
                 src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=700&q=80"
                 class="card-img-top"
                 alt="Montanhas"
-              />
-
-              <div class="card-body">
+            />
+            <div class="card-body">
                 <h5 class="card-title fw-bold">Cultura</h5>
-
                 <p class="card-text text-secondary">
-                  Descubra os costumes e as tradições da sociedade Viking.
+                Descubra os costumes e as tradições da sociedade Viking.
                 </p>
-
-                <a href="#" class="btn btn-outline-info btn-sm"> Conhecer </a>
-              </div>
+                <a href="#" class="btn btn-outline-info btn-sm rounded-pill"> Conhecer </a>
             </div>
-          </div>
-
-          <div class="col-12 col-md-4">
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
             <div class="card bg-dark text-light h-100">
-              <img
+            <img
                 src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80"
                 class="card-img-top"
                 alt="Paisagem natural"
-              />
-
-              <div class="card-body">
+            />
+            <div class="card-body">
                 <h5 class="card-title fw-bold">Legado</h5>
-
                 <p class="card-text text-secondary">
-                  Entenda como os Vikings influenciaram o mundo atual.
+                Entenda como os Vikings influenciaram o mundo atual.
                 </p>
-
                 <a href="#" class="btn btn-outline-info btn-sm"> Conhecer </a>
-              </div>
             </div>
-          </div>
+            </div>
         </div>
-      </section>
-
-      <!-- SEÇÃO FUTEBOL -->
-      <section id="futebol" class="bg-black rounded-4 p-4 mb-4">
+        </div>
+    </section>
+    <!-- SEÇÃO FUTEBOL -->
+    <section id="futebol" class="bg-black rounded-4 p-4 mb-4">
         <div class="mb-4">
-          <h2 class="fw-bold">
+        <h2 class="fw-bold">
             <i class="bi bi-dribbble text-info"></i>
             Futebol Norueguês
-          </h2>
-
-          <p class="text-secondary">
+        </h2>
+        <p class="text-secondary">
             Conheça a paixão da Noruega pelo futebol.
-          </p>
+        </p>
         </div>
-
         <div class="row align-items-center g-4">
-          <div class="col-md-6">
+        <div class="col-md-6">
             <img
-              src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1000&q=80"
-              class="img-fluid rounded-4"
-              alt="Estádio de futebol"
+            src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1000&q=80"
+            class="img-fluid rounded-4"
+            alt="Estádio de futebol"
             />
-          </div>
-
-          <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
             <div class="mb-4">
-              <h4 class="fw-bold">Seleção Norueguesa</h4>
-
-              <p class="text-secondary">
+            <h4 class="fw-bold">Seleção Norueguesa</h4>
+            <p class="text-secondary">
                 Conheça a seleção, seus jogadores e suas participações em Copas
                 do Mundo.
-              </p>
-
-              <a href="#" class="btn btn-outline-info btn-sm"> Saiba mais </a>
+            </p>
+            <a href="#" class="btn btn-outline-info btn-sm rounded-pill"> Saiba mais </a>
             </div>
-
             <hr class="border-secondary" />
-
             <div class="mb-4">
-              <h4 class="fw-bold">Campeonato Norueguês</h4>
-
-              <p class="text-secondary">
+            <h4 class="fw-bold">Campeonato Norueguês</h4>
+            <p class="text-secondary">
                 Descubra os principais clubes e competições do futebol
                 norueguês.
-              </p>
-
-              <a href="#" class="btn btn-outline-info btn-sm"> Saiba mais </a>
+            </p>
+            <a href="#" class="btn btn-outline-info btn-sm rounded-pill"> Saiba mais </a>
             </div>
-
             <hr class="border-secondary" />
-
             <div>
-              <h4 class="fw-bold">Jogadores</h4>
-
-              <p class="text-secondary">
+            <h4 class="fw-bold">Jogadores</h4>
+            <p class="text-secondary">
                 Conheça os principais nomes do futebol da Noruega.
-              </p>
-
-              <a href="#" class="btn btn-outline-info btn-sm">
+            </p>
+            <a href="./jogadores.html" class="btn btn-outline-info btn-sm rounded-pill">
                 Conhecer jogadores
-              </a>
+            </a>
             </div>
-          </div>
+        </div>
         </div>
     </section>
     <!-- CONTINUE AQUI:

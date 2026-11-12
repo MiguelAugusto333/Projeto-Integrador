@@ -1,0 +1,14 @@
+:root{
+    --entrar: #030E18;
+    --botao_criarConta: #13D8FD;
+}
+body{
+    background-color: var(--entrar);
+}
+.principal{
+    background-color: #11144E;
+}
+.image_player{
+    background-image: url(../img/haaland.jpg);
+    background: rgba(red, green, blue, 0.5);
+}
