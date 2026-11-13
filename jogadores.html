@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/jogadores.css">
+    <title>Jogadores - Seleção Norueguesa</title>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid vh-100 py-5">
+        <main class="container">
+            <header class="text-center text-white mb-5">
+                <h1 class="fw-bold text-uppercase">
+                    Jogadores
+                </h1>
+                <p class="text-secondary">
+                    Conheça os jogadores e suas estatísticas
+                </p>
+                <div class="bg-danger mx-auto rounded" style="height: 4px; width: 80px;"></div>
+            </header>
+            <section>
+                <div class="row justify-content-center align-items-center g-3">
+                    <!-- Botão anterior -->
+                    <div class="col-auto">
+                        <button id="prevPlayer"
+                            class="btn btn-danger rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 50px; height: 50px;"
+                            aria-label="Jogador anterior">
+                            <i class="bi bi-chevron-left fs-5"></i>
+                        </button>
+                    </div>
+                    <!-- Card do jogador -->
+                    <div class="col-10 col-md-8 col-lg-7 col-xl-6">
+                        <div class="card bg-dark text-white border-danger border-2 rounded-4 overflow-hidden shadow-lg">
+                            <!-- Imagem -->
+                            <div class="ratio ratio-4x3 bg-secondary">
+                                <img id="playerImage"
+                                    src=""
+                                    class="w-100 h-100 object-fit-contain"
+                                    alt="Jogador">
+                            </div>
+                            <!-- Informações -->
+                            <div class="card-body p-4">
+                                <div class="text-center mb-4">
+                                    <h2 id="playerName"
+                                        class="card-title fw-bold text-uppercase mb-2">
+                                    </h2>
+                                    <h6 id="playerNumber"
+                                        class="text-danger fw-bold">
+                                    </h6>
+                                    <span id="playerPosition"
+                                        class="badge bg-danger px-3 py-2 mb-3">
+                                    </span>
+                                    <p id="playerCountry"
+                                        class="text-secondary mb-0">
+                                        🇳🇴 NORUEGA
+                                    </p>
+                                </div>
+                                <hr class="border-secondary">
+                                <!-- Estatísticas -->
+                                <h5 class="fw-bold text-center mb-4">
+                                    <i class="bi bi-bar-chart-fill text-danger me-2"></i>
+                                    Estatísticas
+                                </h5>
+                                <div class="row g-3">
+                                    <!-- Gols -->
+                                    <div class="col-6">
+                                        <div class="bg-secondary bg-opacity-25 rounded-3 p-3 text-center h-100">
+                                            <i class="bi bi-dribbble text-danger fs-4"></i>
+                                            <p class="text-secondary mb-1 mt-2">
+                                                Gols
+                                            </p>
+                                            <h4 id="playerGoals" class="fw-bold mb-0">
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <!-- Assistências -->
+                                    <div class="col-6">
+                                        <div class="bg-secondary bg-opacity-25 rounded-3 p-3 text-center h-100">
+                                            <i class="bi bi-lightning text-danger fs-4"></i>
+                                            <p class="text-secondary mb-1 mt-2">
+                                                Assistências
+                                            </p>
+
+                                            <h4 id="playerAssists" class="fw-bold mb-0">
+                                            </h4>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Partidas -->
+                                    <div class="col-6">
+                                        <div class="bg-secondary bg-opacity-25 rounded-3 p-3 text-center h-100">
+
+                                            <i class="bi bi-person-standing text-danger fs-4"></i>
+
+                                            <p class="text-secondary mb-1 mt-2">
+                                                Partidas
+                                            </p>
+
+                                            <h4 id="playerMatches" class="fw-bold mb-0">
+                                            </h4>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Minutos -->
+                                    <div class="col-6">
+                                        <div class="bg-secondary bg-opacity-25 rounded-3 p-3 text-center h-100">
+
+                                            <i class="bi bi-clock text-danger fs-4"></i>
+
+                                            <p class="text-secondary mb-1 mt-2">
+                                                Minutos
+                                            </p>
+
+                                            <h4 id="playerMinutes" class="fw-bold mb-0">
+                                            </h4>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Nota média -->
+                                    <div class="col-12">
+                                        <div class="bg-secondary bg-opacity-25 rounded-3 p-3 text-center">
+
+                                            <i class="bi bi-star-fill text-warning fs-4"></i>
+
+                                            <p class="text-secondary mb-1 mt-2">
+                                                Nota média
+                                            </p>
+
+                                            <h4 id="playerRating" class="fw-bold mb-0">
+                                            </h4>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Contador -->
+                        <p id="playerCounter"
+                            class="text-center text-secondary mt-3">
+                        </p>
+
+                    </div>
+
+                    <!-- Botão próximo -->
+                    <div class="col-auto">
+
+                        <button id="nextPlayer"
+                            class="btn btn-danger rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 50px; height: 50px;"
+                            aria-label="Próximo jogador">
+
+                            <i class="bi bi-chevron-right fs-5"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript dos jogadores -->
+    <script src="./assets/js/jogadores.js"></script>
+
+</body>
+
+</html>

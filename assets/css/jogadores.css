@@ -1,0 +1,26 @@
+:root{
+    --entrar: #030E18;
+    --botao_criarConta: #13D8FD;
+}
+body{
+    background-color: var(--entrar);
+}
+.image_player{
+    background-image: url(../img/haaland.jpg);
+    background: rgba(red, green, blue, 0.5);
+}
+.player-nav {
+    width: 55px;
+    height: 55px;
+    background: #202b3d;
+    color: white;
+    border: 1px solid #bd172d;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.player-nav:hover {
+    background: #bd172d;
+    color: white;
+    transform: scale(1.1);
+}
