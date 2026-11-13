@@ -5,7 +5,11 @@ const jogadores = [
         nome: "Erling Haaland",
         numero: 9,
         posicao: "Atacante",
+<<<<<<< HEAD
         imagem: "assets/img/haalland.jpeg",
+=======
+        imagem: "./assets/img/haalland.jpg",
+>>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
         gols: 12,
         assistencias: 2,
         partidas: 10,
@@ -17,7 +21,11 @@ const jogadores = [
         nome: "Martin Ødegaard",
         numero: 10,
         posicao: "Meio-campista",
+<<<<<<< HEAD
         imagem: "assets/img/Martin Ødegaard.png",
+=======
+        imagem: "./assets/img/odegaard.png",
+>>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
         gols: 4,
         assistencias: 6,
         partidas: 9,
@@ -29,12 +37,17 @@ const jogadores = [
         nome: "Alexander Sørloth",
         numero: 7,
         posicao: "Atacante",
+<<<<<<< HEAD
         imagem: "assets/img/Alexander.jpg",
+=======
+        imagem: "./assets/img/sorloth.png",
+>>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
         gols: 8,
         assistencias: 1,
         partidas: 10,
         minutos: 690,
         nota: 7.5
+<<<<<<< HEAD
     },
 
     {
@@ -128,6 +141,12 @@ const jogadores = [
         nota: 8.0
     }
 ]
+=======
+    }
+
+];
+
+>>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
 
 // Jogador que está aparecendo
 let jogadorAtual = 0;
