@@ -3,22 +3,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
     <title>The NorWay | Descubra a Noruega</title>
-=======
-    <title>Norge | Descubra a Noruega</title>
->>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
-    <link
-    href="./bootstrap/css/bootstrap.min.css"
-    rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-<<<<<<< HEAD
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans+Linear+B&display=swap" rel="stylesheet">
-=======
->>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
 </head>
 <body class="bg-dark text-light">
     <!-- MENU -->
@@ -26,7 +16,7 @@
     <div class="container">
         <a class="navbar-brand fw-bold fs-3" href="#inicio">
         <i class="bi bi-compass text-info"></i>
-        <span>The Nor<span class="text-info">Way</span>
+        <span class="titulodoInicio">The Nor<span class="text-info">Way</span>
         </a>
 
         <button
@@ -100,11 +90,7 @@
         <div class="row align-items-center g-4">
         <div class="col-md-6">
             <span class="badge bg-info text-dark mb-3">
-<<<<<<< HEAD
             BEM-VINDO AO THE NORWAY
-=======
-            BEM-VINDO AO NORGE
->>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
             </span>
             <h1 class="display-4 fw-bold">
             Descubra a magia da
@@ -120,11 +106,7 @@
         </div>
         <div class="col-md-6">
             <img
-<<<<<<< HEAD
             src="./assets/img/01_aurora_boreal_no_fiorde.png"
-=======
-            src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1000&q=80"
->>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
             class="img-fluid rounded-4"
             alt="Aurora boreal na Noruega"
             />
@@ -151,13 +133,8 @@
         <div class="col-12 col-md-4">
             <div class="card bg-dark text-light h-100">
             <img
-<<<<<<< HEAD
                 src="./assets/img/02_navio_viking_no_fiorde.png"
                 class="card-img-top h-25"
-=======
-                src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=700&q=80"
-                class="card-img-top"
->>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
                 alt="Paisagem marítima"
             />
             <div class="card-body">
@@ -173,11 +150,7 @@
             <div class="card bg-dark text-light h-100">
             <img
                 src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=700&q=80"
-<<<<<<< HEAD
                 class="card-img-top h-25"
-=======
-                class="card-img-top"
->>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
                 alt="Montanhas"
             />
             <div class="card-body">
@@ -257,7 +230,6 @@
         </div>
         </div>
     </section>
-<<<<<<< HEAD
     <section id="cultura" class="bg-black rounded-4 p-4 mb-4">
         <div class="mb-4">
         <h2 class="fw-bold">
@@ -265,7 +237,7 @@
             Cultura da Noruega
         </h2>
         <p class="text-secondary">
-            Cultura cheia de riquezas e com uma
+            Cultura cheia de riquezas 
         </p>
         </div>
         <div class="row align-items-center g-4">
@@ -305,28 +277,98 @@
         </div>
         </div>
     </section>
-    <section class="bg-black rounded-4 p-4 mb-4">
+    <section class="bg-black rounded-4 p-4 mb-4 geografia">
         <div class="mb-4">
             <div class="d-flex justify-content-center align-items-center">
-                <h1 class="">Geografia</h1>
+                <h1 class="titulo-geografia">Geografia</h1>
             </div>
             <div class="justify-content-center d-flex">
-                <p>No norte, o sol some no inverno e não se põe no verão. Escolha a estação.</p>
+                <p class="descricao-geografia text-secondary">No norte, o sol some no inverno e não se põe no verão. Escolha a estação.</p>
             </div>
-            <div class="card-body">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="mt-3 gap-4 mb-4">
+                    <button class="verao btn btn-estacao rounded-pill text-white me-3" id="btnVerao" onclick="mudarEstacao('verao')">Verão</button>
+                    <button class="inverno btn btn-estacao rounded-pill text-white" id="btnInverno" onclick="mudarEstacao('inverno')">inverno</button>
+                </div>
+            </div>
+            <!-- CENÁRIO -->
+    <div id="cenario" class="cenario inverno">
 
+        <div class="ceu"></div>
+        <div class="mar"></div>
+
+        <div class="astro"></div>
+
+        <div class="informacao bg-secondary">
+            <h4 id="tituloCenario">Noite polar</h4>
+
+            <p id="textoCenario">
+                Entre novembro e janeiro, o sol não aparece no extremo norte.
+                É a melhor época para a aurora boreal.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- CARDS -->
+    <div class="row g-3 mt-2">
+
+        <div class="col-12 col-md-4">
+            <div class="card-geografia">
+                <h2>~100 mil</h2>
+                <p>ilhas e ilhotas no litoral</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card-geografia">
+                <h2>205 km</h2>
+                <p>de extensão do Sognefjord</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card-geografia">
+                <h2 class="">2.469 m</h2>
+                <p>do Galdhøpiggen, o ponto mais alto</p>
+            </div>
+        </div>
+        </div>
+        <div class="d-flex justify-content-end align-items-end mt-5">
+            <a class="btn rounded-pill text-white bg-info">Mais sobre</a>
+        </div>
+    </section>
+    <section id="#Culinaria" class="bg-black rounded-4 p-4 mb-4">
+        <div class="mb-4 d-flex justify-content-center align-items-center">
+            <h1 class="fw-bolder">Culinária</h1>
+        </div>
+        <div class="mb-2 d-flex justify-content-center align-items-center">
+            <p class="escolherCulinaria fs-5 text-secondary">Escolha um prato.</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center ">
+            <div class="mt-2">
+                <button class="comidasTopicos btn rounded-pill text-white me-2" id="btnKrukake" onclick="mudarComida('Krumkake')">Krumkake</button>
+                <button class="comidasTopicos btn rounded-pill text-white" id="btnBrunost" onclick="mudarComida('Brunost')">Brunost</button>
+                <button class="comidasTopicos btn rounded-pill text-white ms-2" id="btnTorsk" onclick="mudarComida('Torsk')">Torsk med poteter</button>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="cenario" id="cenario">
+                <img src="" alt="" class="imagemComida img-fluid object-fit-contain" id="imagemComida">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="">
+                
             </div>
         </div>
     </section>
-=======
->>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
     <!-- CONTINUE AQUI:
             NORUEGA NO GERAL
             HISTÓRIA
             JOGADORES
         -->
     </main>
-    <!-- RODAPÉ -->
     <footer class="bg-black text-center p-4 mt-5">
     <h4 class="fw-bold"><i class="bi bi-compass text-info"></i> Norge</h4>
     <p class="text-secondary mb-3">
@@ -347,9 +389,6 @@
         © 2026 Norge - Todos os direitos reservados.
     </p>
     </footer>
-<<<<<<< HEAD
     <script src="./assets/js/script.js"></script>
-=======
->>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
 </body>
 </html>

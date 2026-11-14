@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+:root{
+    font-family: Georgia, serif;
+}
 body{
     background-color: #212221;
 }
@@ -13,6 +15,10 @@ body{
 .titulo{
     font-family: "Bangers", system-ui;
     font-size: 5rem;
+}
+.titulodoInicio{
+    font-family: "Bangers", system-ui;
+    font-size: 3rem;
 }
 .bangers-regular {
     font-family: "Bangers", system-ui;
@@ -38,5 +44,150 @@ body{
 .botaoInicio{
     cursor: pointer;
 }
-=======
->>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
+.verao{
+    background-color: #e75e6b;
+}
+.inverno{
+    background-color: #e75e6b;
+}
+.geografia {
+    background-color: #142632;
+    border: 1px solid #294352;
+}
+
+.card-geografia h2 {
+    color: #80b9e5;
+}
+.card-geografia{
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.descricao-geografia {
+    color: #a9c9df;
+    font-size: 18px;
+    max-width: 550px;
+    margin: auto;
+}
+
+.btn-estacao {
+    border: 1px solid #294352;
+    border-radius: 50px;
+    padding: 10px 24px;
+    color: white;
+    background: #0d1d27;
+}
+
+.btn-estacao.ativo {
+    background: #e75e6b;
+    color: white;
+    border-color: #e75e6b;
+}
+
+.cenario {
+    position: relative;
+    max-width: 850px;
+    height: 315px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: background 0.5s;
+}
+
+.ceu, .mar {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    transition: background 0.5s;
+}
+
+.ceu {
+    top: 0;
+}
+
+.mar {
+    bottom: 0;
+}
+
+.astro {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.informacao {
+    position: absolute;
+    bottom: 32px;
+    left: 4%;
+    width: 70%;
+    padding: 15px 20px;
+    border-radius: 12px;
+    color: white;
+    background: rgba(10, 38, 53, 0.8);
+}
+
+.informacao h4 {
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.informacao p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+/* VERÃO */
+.cenario.verao .ceu {
+    background: linear-gradient(#f9b44f, #ffdc91);
+}
+
+.cenario.verao .mar {
+    background: linear-gradient(#478ca9, #17506c);
+}
+
+.cenario.verao .astro {
+    background: #fff3bf;
+    box-shadow: 0 0 35px #fff3bf;
+}
+
+/* INVERNO */
+.cenario.inverno .ceu {
+    background: linear-gradient(#06121e, #123c50);
+}
+
+.cenario.inverno .mar {
+    background: linear-gradient(#dce9ed, #b5cbd5);
+}
+
+.cenario.inverno .astro {
+    background: #e5edff;
+    box-shadow: 0 0 35px #a8c9ff;
+}
+
+.card-geografia {
+    border: 1px solid #294352;
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+    height: 100%;
+}
+
+.card-geografia p {
+    color: #a9c9df;
+    margin-bottom: 0;
+}
+.comidasTopicos.ativo {
+    background: #e75e6b;
+    color: white;
+    border-color: #e75e6b;
+}
+.comidasTopicos{
+    background-color: #0d1d27;
+    border: 1px solid #294352;
+}

@@ -5,7 +5,6 @@
 body{
     background-color: var(--entrar);
 }
-<<<<<<< HEAD
 .image_player{
     background-image: url(../img/haaland.jpg);
     background: rgba(red, green, blue, 0.5);
@@ -24,12 +23,4 @@ body{
     background: #bd172d;
     color: white;
     transform: scale(1.1);
-=======
-.principal{
-    background-color: #11144E;
-}
-.image_player{
-    background-image: url(../img/haaland.jpg);
-    background: rgba(red, green, blue, 0.5);
->>>>>>> 37f8f5b1c35bea94aceb14f235cc74f97a539d4b
 }
