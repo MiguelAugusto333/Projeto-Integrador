@@ -5,11 +5,11 @@ const jogadores = [
         nome: "Erling Haaland",
         numero: 9,
         posicao: "Atacante",
-        imagem: "./assets/img/haalland.jpg",
-        gols: 12,
-        assistencias: 2,
-        partidas: 10,
-        minutos: 821,
+        imagem: "assets/img/haalland.jpeg",
+        gols: 66,
+        assistencias: 9,
+        partidas: 60,
+        minutos: 4.308,
         nota: 7.8
     },
 
@@ -17,11 +17,11 @@ const jogadores = [
         nome: "Martin Ødegaard",
         numero: 10,
         posicao: "Meio-campista",
-        imagem: "./assets/img/odegaard.png",
-        gols: 4,
-        assistencias: 6,
-        partidas: 9,
-        minutos: 765,
+        imagem: "assets/img/Martin Ødegaard.png",
+        gols: 5,
+        assistencias: 26,
+        partidas: 77,
+        minutos: 1.834,
         nota: 8.2
     },
 
@@ -29,16 +29,105 @@ const jogadores = [
         nome: "Alexander Sørloth",
         numero: 7,
         posicao: "Atacante",
-        imagem: "./assets/img/sorloth.png",
+        imagem: "assets/img/Alexander.jpg",
         gols: 8,
         assistencias: 1,
         partidas: 10,
         minutos: 690,
         nota: 7.5
+    },
+
+    {
+        nome: "Antonio Nusa",
+        numero: 7,
+        posicao: "Atacante",
+        imagem: "assets/img/Alexander.jpg",
+        gols: 4,
+        assistencias: 3,
+        partidas: 10,
+        minutos: 2.027,
+        nota: 8.6
+    },
+
+    {
+        nome: "Andreas Schjelderup",
+        numero: 7,
+        posicao: "Atacante",
+        imagem: "assets/img/Alexander.jpg",
+        gols: 8,
+        assistencias: 1,
+        partidas: 10,
+        minutos: 690,
+        nota: 8.3
+    },
+    
+    {
+        nome: "Sander Berge",
+        numero: 7,
+        posicao: "Atacante",
+        imagem: "assets/img/Alexander.jpg",
+        gols: 8,
+        assistencias: 1,
+        partidas: 10,
+        minutos: 690,
+        nota: 8.6
+    },
+    {
+        nome: "Fredrik Aursnes",
+        numero: 7,
+        posicao: "Atacante",
+        imagem: "assets/img/Alexander.jpg",
+        gols: 8,
+        assistencias: 1,
+        partidas: 10,
+        minutos: 690,
+        nota: 8.9
+    },
+    {
+        nome: "Julian Ryerson",
+        numero: 7,
+        posicao: "Atacante",
+        imagem: "assets/img/Alexander.jpg",
+        gols: 8,
+        assistencias: 1,
+        partidas: 10,
+        minutos: 690,
+        nota: 8.8
+    },
+    {
+        nome: "Kristoffer Ajer",
+        numero: 7,
+        posicao: "Atacante",
+        imagem: "assets/img/Alexander.jpg",
+        gols: 8,
+        assistencias: 1,
+        partidas: 10,
+        minutos: 690,
+        nota: 8.4
+    },
+    {
+        nome: "LEO ØSTIGÅRD",
+        numero: 7,
+        posicao: "Atacante",
+        imagem: "assets/img/Alexander.jpg",
+        gols: 8,
+        assistencias: 1,
+        partidas: 10,
+        minutos: 690,
+        nota: 8.4
+    },
+    {
+        nome: "ØRJAN NYLAND",
+        numero: 7,
+        posicao: "Atacante",
+        imagem: "assets/img/Alexander.jpg",
+        gols: 8,
+        assistencias: 1,
+        partidas: 10,
+        minutos: 690,
+        nota: 8.0
     }
-
-];
-
+]
 
 // Jogador que está aparecendo
 let jogadorAtual = 0;
