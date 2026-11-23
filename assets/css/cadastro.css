@@ -11,8 +11,11 @@
     --entrar: #030E18;
 }
 body{
-    background-color: #030E18;
+    background-color: #0055A4;
 }
-.criarConta{
-    background-color: #08c7e8;
+.cor-entrar{
+    background-color: #07457D;
+}
+.vidro{
+    background: rgba(255, 255, 255, 0.25);
 }

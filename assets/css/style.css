@@ -1,59 +1,74 @@
-:root{
+:root {
     font-family: Georgia, serif;
 }
-body{
+
+body {
     background-color: #212221;
 }
-.image{
+
+.image {
     height: 25rem;
 }
+
 .noto-sans-linear-b-regular {
     font-family: "Noto Sans Linear B", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.titulo{
+
+.titulo {
     font-family: "Bangers", system-ui;
     font-size: 5rem;
 }
-.titulodoInicio{
+
+.titulodoInicio {
     font-family: "Bangers", system-ui;
     font-size: 3rem;
 }
+
 .bangers-regular {
     font-family: "Bangers", system-ui;
     font-weight: 400;
     font-style: normal;
 }
-.fonte{
+
+.fonte {
     font-family: "Oswald", sans-serif;
     font-size: 1em;
 }
-.lin{
+
+.lin {
     background-color: black;
     height: 15px;
 }
+
 .bbh-bogle-regular {
     font-family: "BBH Bogle", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.fonte02{
-    font-family: "BBH Bogle", sans-serif;  
+
+.fonte02 {
+    font-family: "BBH Bogle", sans-serif;
 }
-.botaoInicio{
+
+.botaoInicio {
     cursor: pointer;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
-.botaoInicio:hover{
-    transform: scale(1.1); 
+
+.botaoInicio:hover {
+    transform: scale(1.1);
 }
-.verao{
+
+.verao {
     background-color: #e75e6b;
 }
-.inverno{
+
+.inverno {
     background-color: #e75e6b;
 }
+
 .geografia {
     background-color: #142632;
     border: 1px solid #294352;
@@ -62,7 +77,8 @@ body{
 .card-geografia h2 {
     color: #80b9e5;
 }
-.card-geografia{
+
+.card-geografia {
     font-family: Georgia, serif;
     font-weight: bold;
 }
@@ -186,6 +202,7 @@ body{
     color: #a9c9df;
     margin-bottom: 0;
 }
+
 /*PARTE CULINÁRIA*/
 
 
@@ -196,3 +213,44 @@ body{
     object-position: center;
 }
 
+.botao-vidro {
+    /* 1. Fundo semitransparente */
+    background: rgba(255, 0, 0, 0.25);
+
+    /* 2. O desfoque que cria o efeito de vidro fosco */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Suporte para Safari */
+
+    /* 3. Borda fina para simular o reflexo de luz na quina do vidro */
+    border: 1px solid rgba(252, 4, 4, 0.3);
+    border-radius: 16px;
+
+    /* 4. Sombra externa para dar profundidade e brilho interno sutil */
+    box-shadow:
+        0 4px 30px rgba(0, 0, 0, 0.1),
+        inset 0 1px 1px rgba(201, 1, 1, 0.4);
+
+    /* Estilo do texto e espaçamento */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.botao-vidro:hover {
+    background: rgba(255, 0, 0, 0.25);
+    border-color: rgba(255, 0, 0, 0.5);
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 32px rgba(255, 5, 5, 0.2),
+        inset 0 1px 2px rgba(255, 0, 0, 0.6);
+}
+
+/* Efeito ao clicar */
+.botao-vidro:active {
+    transform: translateY(0);
+}
